@@ -13,4 +13,5 @@ I had originally wanted to try using Laravel/Lumen for this project as I have no
 
 ## Running
 To run use the command `node index.js`
-The server will then run on 'http://localhost:8000/'
+
+The server will then run on http://localhost:8000/
