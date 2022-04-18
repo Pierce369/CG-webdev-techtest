@@ -15,5 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call('UsersTableSeeder');
+        $this->call([
+            ProfileTableSeeder::class,
+            AlbumTableSeeder::class,
+        ]);
     }
 }

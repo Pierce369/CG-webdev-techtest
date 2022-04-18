@@ -14,5 +14,6 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    header("Location: index.html");
+    exit();
 });
