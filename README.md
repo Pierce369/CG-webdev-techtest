@@ -17,10 +17,16 @@ Add git repo to your xampp folder at C:\xampp\htdocs
 
 Open xampp control panel and click start on the apache module
 
-run the command `php artisan migrate --seed` to create and seed the database
+run the command `php artisan migrate --seed` to create and seed the database,
+or `php artisan migrate:refresh --seed` to reset the database to default
 
-open http://localhost/CG-webdev-techtest/ in your browswe
+open http://localhost/CG-webdev-techtest/public/ in your browswe
 
 
 ## Resources:
+* https://lumen.laravel.com/docs/9.x/installation
+* https://laravel.com/docs/5.8/migrations
 * https://loige.co/developing-a-web-application-with-lumen-and-mysql/
+* https://www.dorusomcutean.com/api-how-to-create-lumen-basic-api/
+* https://laravel.com/docs/9.x/queries
+

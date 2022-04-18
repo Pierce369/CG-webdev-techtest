@@ -1,6 +1,8 @@
 <?php
 
 /** @var \Laravel\Lumen\Routing\Router $router */
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,12 @@
 */
 
 $router->get('/', function () use ($router) {
-    header("Location: index.html");
+    $profile = DB::table("profile")->find(1);
+    //$album = DB::table('album')->get();
+
+    //return $profile->name;
+
+
+    return view('profile');
     exit();
 });
