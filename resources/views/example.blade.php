@@ -15,16 +15,25 @@
                 }
             });
 
+            function fixPicLocation(loc){
+                out = loc.replace("jpg", "jpeg");
+                return "/" + out;
+            }
+
             function getProfile() {
                 $.ajax({
                 type:'GET',
                 url:'profile',
                 dataType:'json',
-                data:{
-                    
-                },
+                data:{},
                 success:function(data) {
-                    console.log(data.msg);
+                    console.log(data.profile);
+                    document.getElementById("name").innerHTML = data.profile.name;
+                    document.getElementById("bio").innerHTML = data.profile.bio;
+                    document.getElementById("phone").innerHTML = data.profile.phone;
+                    document.getElementById("email").innerHTML = data.profile.email;
+                    loc = fixPicLocation(data.profile.profile_picture);
+                    document.getElementById("profilePic").src  = loc;
                 }
                 });
             }
@@ -37,25 +46,25 @@
             <div>
                 <div class="row py-lg-5">
                     <div class="col-lg-3">
-                        <img src="\img\profile.jpeg" width="100%">
+                        <img id="profilePic" src="\img\profile.jpeg" width="100%">
                     </div>
                     <div class="col-lg-6">
                         <div class="row py-lg-3">
-                            <h2><?php echo $name; ?></h2>
+                            <h2 id="name">Example Name</h2>
                         </div>
                         <div class="row py-lg-6">
                             <div class="col-lg-6">
                                 <h3>Bio:</h3>
-                                <p>fehad dgyagjhdgfj dgyagdjh gdagdj agad jhagd</p>
+                                <p id="bio">fehad dgyagjhdgfj dgyagdjh gdagdj agad jhagd</p>
                             </div>
                             <div class="col-lg-3">
                                 <div class="row py-lg-1">
                                     <h5>Phone:</h5>
-                                    <p>555-555-5555</p>
+                                    <p id="phone">555-555-5555</p>
                                 </div>
                                 <div class="row py-lg-1">
                                     <h5>Email:</h5>
-                                    <p>test@email.com</p>
+                                    <p id="email">example@email.com</p>
                                 </div>
                             </div>
                         </div>

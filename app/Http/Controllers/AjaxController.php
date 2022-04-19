@@ -19,8 +19,9 @@ class AjaxController extends Controller
     }
 
     public function getProfileJSON() {
-        $msg = "This is a simple message.";
-        return response()->json(array('msg'=> $msg), 200);
+        $strJsonFileContents  = file_get_contents("..\database\landscapes.json", true);
+        $msg = json_decode($strJsonFileContents , true);
+        return response()->json(array('profile'=> $msg), 200);
      }
     //
 }
