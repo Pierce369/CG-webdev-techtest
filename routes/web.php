@@ -22,6 +22,6 @@ $router->get('/', function () use ($router) {
     //return $profile->name;
 
 
-    return view('profile');
+    return view('example', ['name' => 'James']);
     exit();
 });

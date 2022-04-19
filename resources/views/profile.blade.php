@@ -4,8 +4,8 @@
         <title>TITLE test</title>
     </head>
     <body>
-        <!--Author Info-->
-        <!-- <div class="row py-lg-5">
+        <!-- Author Info-->
+        <div class="row py-lg-5">
             <title>{{$name}}</title>
             <div class="col-lg-3">
                 <img href="img/profile.jpeg">
@@ -16,11 +16,11 @@
             <div class="col-lg-3">
                 <h1>Contact</h1>
             </div>
-        </div> -->
+        </div>
 
         test
         
-        <!-- <hr/>
+        <hr/>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
 
@@ -42,6 +42,6 @@
                 @endforeach
 
             </div>
-        </div> -->
+        </div>
     </body>
 </html>
