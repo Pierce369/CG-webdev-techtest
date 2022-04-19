@@ -25,3 +25,5 @@ $router->get('/', function () use ($router) {
     return view('example', ['name' => 'James']);
     exit();
 });
+
+$router->get('/profile', 'AjaxController@getProfileJSON');

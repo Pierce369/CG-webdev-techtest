@@ -29,4 +29,6 @@ open http://localhost/CG-webdev-techtest/public/ in your browswe
 * https://loige.co/developing-a-web-application-with-lumen-and-mysql/
 * https://www.dorusomcutean.com/api-how-to-create-lumen-basic-api/
 * https://laravel.com/docs/9.x/queries
+* https://www.tutorialspoint.com/laravel/laravel_ajax.htm
+
 

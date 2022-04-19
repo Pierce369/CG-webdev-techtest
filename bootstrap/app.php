@@ -23,6 +23,8 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
+$app->register(\Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class);
+
 $app->withFacades();
 
 $app->withEloquent();

@@ -6,6 +6,29 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <script>
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            function getProfile() {
+                $.ajax({
+                type:'GET',
+                url:'profile',
+                dataType:'json',
+                data:{
+                    
+                },
+                success:function(data) {
+                    console.log(data.msg);
+                }
+                });
+            }
+        </script>
 
     </head>
     <body>
@@ -41,6 +64,11 @@
             </div>
 
             <h1>Hello, <?php echo $name; ?></h1>
+            <h1>
+                <script>
+                    getProfile();
+                </script>
+            </h1>
             
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
