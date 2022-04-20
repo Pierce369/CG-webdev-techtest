@@ -10,7 +10,7 @@ Created by Pierce Baker
 * Lumen
 * PHP artisan
 
-I have not had the oppurunity to use Laravel/Lumen before, so I wanted to try using them for this project. I started with laravel, but was unable to get it installed on my machine due to some issue with wsl I was unable to fix in a timely manner, so I moved onto Lumen. I got it installed and running on my machine, and began devlopment of the web app. I started by creating the database with PHP artisan and created seeders to input the required information.
+I have not had the oppurunity to use Laravel/Lumen before, so I wanted to try using them for this project. I started with laravel, but was unable to get it installed on my machine due to some issue with wsl I was unable to fix in a timely manner, so I moved onto Lumen. I got it installed and running on my machine much quicker, and began devlopment of the web app. I started by creating the database with PHP artisan and created seeders to input the required information. I then began on the front end by making a basic webpage. I added an ajax call, and updated the webpage to use the call to get the required info. I then prettified the webpage. Finally I added the backend database restful api.
 
 ## Running
 Add git repo to your xampp folder at C:\xampp\htdocs
