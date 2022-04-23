@@ -16,7 +16,7 @@ class AlbumTableSeeder extends Seeder
     public function run()
     {
         app('db')
-            ->table('album')
+            ->table('albums')
             ->insert([
                 "profileID" => 1,
                 "title" => "Nandhaka Pieris",
@@ -26,7 +26,7 @@ class AlbumTableSeeder extends Seeder
                 "featured" => true,
             ]);
         app('db')
-            ->table('album')
+            ->table('albums')
             ->insert([
                 "profileID" => 1,
                 "title" => "New West Calgary",
@@ -36,7 +36,7 @@ class AlbumTableSeeder extends Seeder
                 "featured" => false,
             ]);
         app('db')
-            ->table('album')
+            ->table('albums')
             ->insert([
                 "profileID" => 1,
                 "title" => "Australian Landscape",
@@ -46,7 +46,7 @@ class AlbumTableSeeder extends Seeder
                 "featured" => false,
             ]);
         app('db')
-            ->table('album')
+            ->table('albums')
             ->insert([
                 "profileID" => 1,
                 "title" => "Halvergate Marsh",
@@ -56,7 +56,7 @@ class AlbumTableSeeder extends Seeder
                 "featured" => true,
             ]);
         app('db')
-            ->table('album')
+            ->table('albums')
             ->insert([
                 "profileID" => 1,
                 "title" => "Rikkis Landscape",
@@ -66,7 +66,7 @@ class AlbumTableSeeder extends Seeder
                 "featured" => false,
             ]);
         app('db')
-            ->table('album')
+            ->table('albums')
             ->insert([
                 "profileID" => 1,
                 "title" => "Kiddi Kristjans Iceland",

@@ -22,8 +22,27 @@ $router->get('/', function () use ($router) {
     //return $profile->name;
 
 
-    return view('example', ['name' => 'James']);
+    return view('profile', ['name' => 'James']);
     exit();
 });
 
 $router->get('/profile', 'AjaxController@getProfileJSON');
+
+$router->group([
+    'prefix' => 'api',
+], function () use ($router){
+    $router->get('/profile', 'ProfilesController@index');
+    $router->get('/profile/{id}', 'ProfilesController@show');
+    $router->post('/profile', 'ProfilesController@store');
+    $router->patch('/profile/{id}', 'ProfilesController@update');
+    $router->delete('/profile/{id}', 'ProfilesController@destroy');
+});
+
+$router->group([
+    'prefix' => 'api',
+], function () use ($router){
+    $router->get('/album/{id}', 'AlbumsController@show');
+    $router->post('/album', 'AlbumsController@store');
+    $router->patch('/album/{id}', 'AlbumsController@update');
+    $router->delete('/album/{id}', 'AlbumsController@destroy');
+});

@@ -8,5 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 
 final class Profile extends Model
 {
+    protected $fillable = [
+        'name',
+        'phone',
+        'email',
+        'bio',
+        'profile_picture',
+    ];
 
 }

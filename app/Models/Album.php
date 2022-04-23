@@ -8,5 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 
 final class Album extends Model
 {
-
+    protected $fillable = [
+        'title',
+        'description',
+        'img',
+        'date',
+        'featured',
+    ];
 }

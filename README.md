@@ -22,6 +22,18 @@ or `php artisan migrate:refresh --seed` to reset the database to default
 
 open http://localhost/CG-webdev-techtest/public/ in your browswe
 
+## Backend API
+To test the backend API I used postman.
+
+Get all Profiles: `http://localhost/CG-webdev-techtest/public/api/profile`
+Get selected Profile: `http://localhost/CG-webdev-techtest/public/api/profile/1`
+Post new profile: `http://localhost/CG-webdev-techtest/public/api/profile`
+(must include headers in postman: 
+Content-Type : application/json
+Accept  : application/json)
+Patch exisisting profile: `http://localhost/CG-webdev-techtest/public/api/profile/1`
+Delete exisitng profile: `http://localhost/CG-webdev-techtest/public/api/profile/1`
+
 
 ## Resources:
 * https://lumen.laravel.com/docs/9.x/installation

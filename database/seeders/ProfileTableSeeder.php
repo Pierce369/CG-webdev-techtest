@@ -16,7 +16,7 @@ class ProfileTableSeeder extends Seeder
     public function run()
     {
         app('db')
-            ->table('profile')
+            ->table('profiles')
             ->insert([
                 "name" => "Nick Reynolds",
                 "phone" => "555-555-5555",
